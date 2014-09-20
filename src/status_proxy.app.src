@@ -1,0 +1,17 @@
+{application, status_proxy,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {modules, [
+              status_proxy_app,
+              status_proxy_sup,
+              status_proxy_server
+            ]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { status_proxy_app, []}},
+  {env, []}
+ ]}.
